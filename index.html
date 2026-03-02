@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Dharmapurikar | Professional & Traveler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .nav-link { border-bottom: 2px solid transparent; transition: 0.3s; }
+        .nav-link:hover { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
+        .card-hover:hover { transform: translateY(-8px); transition: 0.4s ease; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter text-slate-800 border-b-4 border-blue-600">AD</h1>
+        <div class="hidden md:flex space-x-10 font-medium text-slate-600">
+            <a href="#travel" class="nav-link">Traveling Stories</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-6 text-center bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-blue-400 font-bold tracking-widest uppercase text-sm">Welcome to my world</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">Corporate Excellence <br>& Global Exploration</h2>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">Strategist by day, storyteller by heart. documenting my professional journey alongside my quest for the world's hidden gems.</p>
+        </div>
+    </header>
+
+    <section id="travel" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-16">
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-bold text-slate-800">Traveling Stories</h3>
+                <p class="text-slate-500 mt-2">Gallery of my latest expeditions</p>
+            </div>
+            <a href="https://github.com/AdityaDharmapurikar/Travel-Portfolio-/issues" class="mt-4 md:mt-0 bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition">Suggest a Story +</a>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white rounded-xl overflow-hidden shadow-xl card-hover border border-slate-100">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800" class="h-64 w-full object-cover" alt="Iceland">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold text-blue-600 uppercase">Iceland</span>
+                        <span class="text-slate-400 text-xs italic">5 min read</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800">The Land of Fire and Ice</h4>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Exploring the volcanic landscapes and massive glaciers of the North Atlantic...</p>
+                    <button class="mt-6 text-blue-600 font-bold hover:text-blue-800">Read Story →</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-xl card-hover border border-slate-100">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800" class="h-64 w-full object-cover" alt="Vietnam">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold text-blue-600 uppercase">Vietnam</span>
+                        <span class="text-slate-400 text-xs italic">4 min read</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800">Mist Over Ha Long Bay</h4>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">Navigating the emerald waters and limestone pillars of the Gulf of Tonkin...</p>
+                    <button class="mt-6 text-blue-600 font-bold hover:text-blue-800">Read Story →</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-xl card-hover border border-slate-100">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800" class="h-64 w-full object-cover" alt="Venice">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold text-blue-600 uppercase">Italy</span>
+                        <span class="text-slate-400 text-xs italic">6 min read</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800">The Canals of Venice</h4>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">A weekend finding hidden history beneath the bridges and winding alleys...</p>
+                    <button class="mt-6 text-blue-600 font-bold hover:text-blue-800">Read Story →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-slate-100 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold text-slate-800 mb-16 text-center">Professional Profile</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <h4 class="text-xl font-bold text-blue-700 flex items-center">
+                        <i class="fas fa-briefcase mr-3"></i> Work Experience
+                    </h4>
+                    <div class="border-l-4 border-blue-600 pl-6 space-y-8">
+                        <div>
+                            <p class="font-bold text-lg text-slate-800">Senior Project Manager</p>
+                            <p class="text-sm text-slate-500 font-semibold uppercase">Global Tech Corp | 2021 - Present</p>
+                            <p class="text-slate-600 mt-2">Managing multi-national teams and high-stakes deliverables in a corporate environment.</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg text-slate-800">Business Analyst</p>
+                            <p class="text-sm text-slate-500 font-semibold uppercase">Finance Dynamics | 2018 - 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h4 class="text-xl font-bold text-blue-700 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3"></i> Education
+                    </h4>
+                    <div class="border-l-4 border-slate-300 pl-6 space-y-8">
+                        <div>
+                            <p class="font-bold text-lg text-slate-800">Master of Business Administration</p>
+                            <p class="text-sm text-slate-500">Stanford University</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg text-slate-800">B.S. Computer Science</p>
+                            <p class="text-sm text-slate-500">MIT</p>
+                        </div>
+                    </div>
+                    <a href="https://linkedin.com/in/AdityaDharmapurikar" target="_blank" class="inline-block mt-4 text-blue-600 border-2 border-blue-600 px-6 py-2 rounded font-bold hover:bg-blue-600 hover:text-white transition">LinkedIn Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-slate-800 mb-4">Let's Connect</h3>
+            <p class="text-slate-500 mb-12">Have a story to share or a project to discuss? Reach out below.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16 text-slate-700">
+                <div class="p-4"><i class="fas fa-envelope text-blue-600 text-2xl mb-3"></i><br>adityadharmapurikar@gmail.com</div>
+                <div class="p-4"><i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-3"></i><br>India</div>
+                <div class="p-4"><i class="fab fa-linkedin text-blue-600 text-2xl mb-3"></i><br>AdityaDharmapurikar</div>
+            </div>
+
+            <form action="https://formspree.io/f/mqakvjzl" method="POST" class="max-w-xl mx-auto space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" name="name" placeholder="Name" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none" required>
+                    <input type="email" name="_replyto" placeholder="Email" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none" required>
+                </div>
+                <textarea name="message" placeholder="Your Message" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-lg h-40 focus:ring-2 focus:ring-blue-600 focus:outline-none" required></textarea>
+                <button type="submit" class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold text-lg hover:bg-slate-700 shadow-lg transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-900 text-center text-slate-500 text-sm border-t border-slate-800">
+        © 2024 Aditya Dharmapurikar. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
