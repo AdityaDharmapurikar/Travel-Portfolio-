@@ -1,0 +1,17 @@
+<main class="max-w-3xl mx-auto pt-32 p-10">
+    <h2 class="text-3xl font-bold text-slate-800 mb-4">Story Suggestions</h2>
+    <p class="text-slate-600 mb-8">Have a story you want featured? Or want me to edit something? Let me know!</p>
+    
+    <form action="https://formspree.io/f/mqakvjzl" method="POST" class="space-y-6">
+        <div>
+            <label class="block font-bold mb-2">Suggestion Type</label>
+            <select name="type" class="w-full p-3 border rounded-lg">
+                <option>New Story Idea</option>
+                <option>Edit Existing Story</option>
+                <option>Feedback</option>
+            </select>
+        </div>
+        <textarea name="message" placeholder="Describe your story or the changes needed..." class="w-full p-4 border rounded-lg h-40" required></textarea>
+        <button type="submit" class="w-full bg-slate-900 text-white py-4 rounded-lg font-bold">Submit Suggestion</button>
+    </form>
+</main>
