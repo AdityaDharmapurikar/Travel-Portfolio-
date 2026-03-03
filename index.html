@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Stories | Aditya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav-link { font-weight: 600; color: #475569; transition: 0.3s; border-bottom: 2px solid transparent; }
+        .nav-link:hover { color: #1e40af; border-bottom: 2px solid #1e40af; }
+        .gallery-card:hover { transform: scale(1.02); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <nav class="bg-white shadow-sm fixed w-full z-50 py-4 px-12 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-900">ADITYA</div>
+        <div class="flex space-x-8">
+            <a href="index.html" class="nav-link text-blue-800 border-blue-800">Traveling Stories</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="suggestions.html" class="nav-link">Suggestions</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 text-center bg-slate-100">
+        <h1 class="text-4xl font-extrabold text-slate-800">Traveling Stories</h1>
+        <p class="text-slate-500 mt-4">A corporate professional's journey across the globe.</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-card">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-slate-800">The Swiss Peaks</h2>
+                <p class="text-slate-600 mt-2 text-sm">Navigating the high altitudes of the Alps between board meetings...</p>
+                <button class="mt-4 text-blue-700 font-bold hover:underline">Read Article →</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="w-full h-64 object-cover">
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-slate-800">Icelandic Solitude</h2>
+                <p class="text-slate-600 mt-2 text-sm">Chasing the Aurora Borealis across a volcanic landscape...</p>
+                <button class="mt-4 text-blue-700 font-bold hover:underline">Read Article →</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
