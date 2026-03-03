@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveling Stories | Aditya</title>
+    <title>Traveling Stories | Aditya Dharmapurikar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .nav-link { font-weight: 600; color: #475569; transition: 0.3s; border-bottom: 2px solid transparent; }
         .nav-link:hover { color: #1e40af; border-bottom: 2px solid #1e40af; }
-        .gallery-card:hover { transform: scale(1.02); transition: 0.3s; }
+        .gallery-card { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+        .gallery-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-50">
-    <nav class="bg-white shadow-sm fixed w-full z-50 py-4 px-12 flex justify-between items-center">
-        <div class="text-2xl font-bold text-blue-900">ADITYA</div>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 py-4 px-12 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-900 tracking-tighter">ADITYA</div>
         <div class="flex space-x-8">
             <a href="index.html" class="nav-link text-blue-800 border-blue-800">Traveling Stories</a>
             <a href="portfolio.html" class="nav-link">Portfolio</a>
@@ -22,28 +26,85 @@
         </div>
     </nav>
 
-    <header class="pt-32 pb-16 text-center bg-slate-100">
-        <h1 class="text-4xl font-extrabold text-slate-800">Traveling Stories</h1>
-        <p class="text-slate-500 mt-4">A corporate professional's journey across the globe.</p>
+    <header class="pt-40 pb-20 text-center bg-gradient-to-b from-blue-50 to-slate-50 px-6">
+        <h1 class="text-5xl font-extrabold text-slate-800 mb-4">Traveling Stories</h1>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed italic">
+            "Exploring the intersection of corporate discipline and the untamed beauty of the world."
+        </p>
+        <div class="mt-8">
+            <a href="#gallery" class="bg-blue-900 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-800 transition shadow-lg">Explore Expeditions</a>
+        </div>
     </header>
 
-    <main class="max-w-7xl mx-auto p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-card">
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" class="w-full h-64 object-cover">
-            <div class="p-6">
-                <h2 class="text-xl font-bold text-slate-800">The Swiss Peaks</h2>
-                <p class="text-slate-600 mt-2 text-sm">Navigating the high altitudes of the Alps between board meetings...</p>
-                <button class="mt-4 text-blue-700 font-bold hover:underline">Read Article →</button>
+    <main id="gallery" class="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Manali">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Himachal Pradesh</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Manali: The Valley of Gods</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">From the rustic charm of Old Manali cafes to the high-altitude thrill of Rohtang Pass, discover a blend of spirituality and adventure.</p>
+                <a href="https://www.incredibleindia.gov.in/en/himachal-pradesh/manali" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
             </div>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden gallery-card">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="w-full h-64 object-cover">
-            <div class="p-6">
-                <h2 class="text-xl font-bold text-slate-800">Icelandic Solitude</h2>
-                <p class="text-slate-600 mt-2 text-sm">Chasing the Aurora Borealis across a volcanic landscape...</p>
-                <button class="mt-4 text-blue-700 font-bold hover:underline">Read Article →</button>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Kedarkantha">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Uttarakhand Trek</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Kedarkantha: The Winter Summit</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">A majestic 12,500ft climb through pine forests and frozen lakes, culminating in a 360-degree panorama of the Great Himalayas.</p>
+                <a href="https://uttarakhandtourism.gov.in/" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
             </div>
-        </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Kedarnath">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Pilgrimage</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Kedarnath: Divine Serenity</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">Nestled near the Mandakini river, this sacred Jyotirlinga offers a profound spiritual journey amidst towering snow-capped peaks.</p>
+                <a href="https://shrikedarnath.org/" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Maldives">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Tropical Paradise</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Maldives: Azure Escapes</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">Unwind in overwater villas and explore vibrant coral reefs in this archipelago of 1,200 islands scattered across the Indian Ocean.</p>
+                <a href="https://visitmaldives.com/" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1593181629936-11c609b8db9b?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Munnar">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">South India - Kerala</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Munnar: Emerald Tea Hills</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">Experience the rolling tea plantations, mist-covered mountains, and rare flora like Neelakurinji in the Western Ghats.</p>
+                <a href="https://www.keralatourism.org/destination/munnar/202" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-md overflow-hidden gallery-card border border-slate-100">
+            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800" class="w-full h-64 object-cover" alt="Alleppey">
+            <div class="p-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">South India - Backwaters</span>
+                <h2 class="text-2xl font-bold text-slate-800 mt-2">Alleppey: Venice of the East</h2>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed">Slow down on a traditional houseboat journey through the intricate network of tranquil canals, lagoons, and palm-fringed rivers.</p>
+                <a href="https://www.keralatourism.org/destination/alappuzha-backwaters/220" target="_blank" class="inline-block mt-6 font-bold text-blue-800 hover:text-blue-600 underline">Read Full Guide →</a>
+            </div>
+        </article>
+
     </main>
+
+    <footer class="py-12 bg-white border-t border-slate-200 text-center">
+        <p class="text-slate-400 text-sm italic">"Travel is the only thing you buy that makes you richer."</p>
+        <p class="text-slate-600 font-bold mt-2">&copy; 2024 Aditya Dharmapurikar</p>
+    </footer>
+
 </body>
 </html>
+
